@@ -14,6 +14,9 @@
 		8CD4DDE81ADE19DA008439CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD4DDE71ADE19DA008439CE /* Images.xcassets */; };
 		8CD4DDEB1ADE19DA008439CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD4DDE91ADE19DA008439CE /* LaunchScreen.xib */; };
 		8CD4DDF71ADE19DA008439CE /* BravemoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4DDF61ADE19DA008439CE /* BravemoreTests.swift */; };
+		8CD4DE021ADF7244008439CE /* GameAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4DE011ADF7244008439CE /* GameAsset.swift */; };
+		8CD4DE371ADF9131008439CE /* Baylen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4DE361ADF9131008439CE /* Baylen.swift */; };
+		8CD4DE391AE029C9008439CE /* AnimatableAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4DE381AE029C9008439CE /* AnimatableAsset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		8CD4DDF01ADE19DA008439CE /* BravemoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BravemoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD4DDF51ADE19DA008439CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CD4DDF61ADE19DA008439CE /* BravemoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BravemoreTests.swift; sourceTree = "<group>"; };
+		8CD4DE011ADF7244008439CE /* GameAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAsset.swift; sourceTree = "<group>"; };
+		8CD4DE361ADF9131008439CE /* Baylen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Baylen.swift; sourceTree = "<group>"; };
+		8CD4DE381AE029C9008439CE /* AnimatableAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableAsset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		8CD4DDDB1ADE19DA008439CE /* Bravemore */ = {
 			isa = PBXGroup;
 			children = (
+				8CD4DE001ADF7227008439CE /* Assets3d */,
 				8CD4DDDE1ADE19DA008439CE /* AppDelegate.swift */,
 				8CD4DDE01ADE19DA008439CE /* art.scnassets */,
 				8CD4DDE21ADE19DA008439CE /* GameViewController.swift */,
@@ -113,6 +120,24 @@
 				8CD4DDF51ADE19DA008439CE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CD4DE001ADF7227008439CE /* Assets3d */ = {
+			isa = PBXGroup;
+			children = (
+				8CD4DE351ADF911F008439CE /* Characters */,
+				8CD4DE011ADF7244008439CE /* GameAsset.swift */,
+				8CD4DE381AE029C9008439CE /* AnimatableAsset.swift */,
+			);
+			name = Assets3d;
+			sourceTree = "<group>";
+		};
+		8CD4DE351ADF911F008439CE /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				8CD4DE361ADF9131008439CE /* Baylen.swift */,
+			);
+			name = Characters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +243,9 @@
 			files = (
 				8CD4DDE31ADE19DA008439CE /* GameViewController.swift in Sources */,
 				8CD4DDDF1ADE19DA008439CE /* AppDelegate.swift in Sources */,
+				8CD4DE391AE029C9008439CE /* AnimatableAsset.swift in Sources */,
+				8CD4DE371ADF9131008439CE /* Baylen.swift in Sources */,
+				8CD4DE021ADF7244008439CE /* GameAsset.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +443,7 @@
 				8CD4DDFC1ADE19DA008439CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CD4DDFD1ADE19DA008439CE /* Build configuration list for PBXNativeTarget "BravemoreTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +452,7 @@
 				8CD4DDFF1ADE19DA008439CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

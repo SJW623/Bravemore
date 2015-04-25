@@ -16,7 +16,9 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         // create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.dae")!
+        let scene = SCNScene();
+        scene.background
+        
         
         // create and add a camera to the scene
         let cameraNode = SCNNode()
@@ -40,11 +42,16 @@ class GameViewController: UIViewController {
         ambientLightNode.light!.color = UIColor.darkGrayColor()
         scene.rootNode.addChildNode(ambientLightNode)
         
+      
         // retrieve the ship node
-        let ship = scene.rootNode.childNodeWithName("ship", recursively: true)!
+       // let ship = scene.rootNode.childNodeWithName("ship", recursively: true)!
+        
+        let Baylen = AnimatableAsset(SceneName: "Baylen", modelName: "Baylen");
+        Baylen.addAnimation("flappingWings", fileName: "BaylenFly");
+        
+        scene.rootNode.addChildNode(Baylen.model);
         
         // animate the 3d object
-        ship.runAction(SCNAction.repeatActionForever(SCNAction.rotateByX(0, y: 2, z: 0, duration: 1)))
         
         // retrieve the SCNView
         let scnView = self.view as! SCNView
@@ -59,7 +66,7 @@ class GameViewController: UIViewController {
         scnView.showsStatistics = true
         
         // configure the view
-        scnView.backgroundColor = UIColor.blackColor()
+        scnView.backgroundColor = UIColor.grayColor();
         
         // add a tap gesture recognizer
         let tapGesture = UITapGestureRecognizer(target: self, action: "handleTap:")
